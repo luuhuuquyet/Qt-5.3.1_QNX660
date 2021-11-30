@@ -1,0 +1,14 @@
+prefix=/home/quyetluu/Libs/QT_QNX6
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 QmlDevTools
+Description: Qt QmlDevTools module
+Version: 5.3.1
+Libs: -L${libdir} -lQt5QmlDevTools 
+Libs.private: -L/home/quyetluu/Libs/QT_QNX6/lib -lQt5Bootstrap -lpthread   
+Cflags: -I${includedir}/QtQmlDevTools -I${includedir}
+Requires: Qt5Bootstrap
+
